@@ -19,6 +19,7 @@
 		FFF0E0B01D81BBBD0021DA85 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0E0AA1D81BBBD0021DA85 /* NSDateExtension.swift */; };
 		FFF0E0B11D81BBBD0021DA85 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0E0AB1D81BBBD0021DA85 /* StringExtension.swift */; };
 		FFF0E0B31D81BD580021DA85 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0E0B21D81BD580021DA85 /* MainViewController.swift */; };
+		FFF0E0B51D8331EE0021DA85 /* BreatheScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0E0B41D8331EE0021DA85 /* BreatheScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FFF0E0AA1D81BBBD0021DA85 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		FFF0E0AB1D81BBBD0021DA85 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		FFF0E0B21D81BD580021DA85 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FFF0E0B41D8331EE0021DA85 /* BreatheScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreatheScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				FFF0E0951D81B7AF0021DA85 /* AppDelegate.swift */,
 				FFF0E0971D81B7AF0021DA85 /* WelcomeViewController.swift */,
 				FFF0E0B21D81BD580021DA85 /* MainViewController.swift */,
+				FFF0E0B41D8331EE0021DA85 /* BreatheScene.swift */,
 				FFF0E09C1D81B7AF0021DA85 /* Assets.xcassets */,
 				FFF0E09E1D81B7AF0021DA85 /* LaunchScreen.storyboard */,
 				FFF0E0A11D81B7AF0021DA85 /* Info.plist */,
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF0E0B51D8331EE0021DA85 /* BreatheScene.swift in Sources */,
 				FFF0E0B01D81BBBD0021DA85 /* NSDateExtension.swift in Sources */,
 				FFF0E0B11D81BBBD0021DA85 /* StringExtension.swift in Sources */,
 				FFF0E0AF1D81BBBD0021DA85 /* UIViewExtension.swift in Sources */,
