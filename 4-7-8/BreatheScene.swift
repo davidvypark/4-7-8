@@ -13,12 +13,38 @@ import GameplayKit
 
 class BreatheScene: SKScene {
 	
-	let box = SKSpriteNode()
+	var box = SKSpriteNode()
+	
+	var startPoint = CGPoint()
+	var endPoint = CGPoint()
+	
 	
 	override func didMoveToView(view: SKView) {
 		
-		backgroundColor = SKColor.peterRiverColor()
+		startPoint = CGPoint(x: view.frame.height / 10, y: view.frame.width / 2)
+		endPoint = CGPoint(x: view.frame.height / 1.2, y: view.frame.width / 2)
+		
+		backgroundColor = SKColor.whiteColor()
+		box = SKSpriteNode(color: UIColor.peterRiverColor(), size: CGSizeMake(20, 20))
+		box.position = startPoint
+		
+		animate()
 	}
+	
+	func animate() {
+	
+		
+		let fourAction = SKAction.moveTo(CGPoint(x: 50, y: 50), duration: 4)
+		let sevenAction = SKAction.moveTo(CGPoint(x: 200, y: 500), duration: 7)
+		let eightAction = SKAction.moveTo(CGPoint(x: 50, y: 500 ), duration: 8)
+		
+		let sequence = SKAction.sequence([fourAction, sevenAction, eightAction])
+		
+		box.runAction(SKAction.repeatActionForever(sequence))
+		addChild(box)
+	}
+	
+
 	
 	
 	

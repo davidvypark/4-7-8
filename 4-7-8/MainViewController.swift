@@ -12,37 +12,20 @@ import SnapKit
 
 class MainViewController: UIViewController {
 	
-	var box = UIView()
+	override func loadView() {
+		super.loadView()
+		self.view = SKView(frame: self.view.frame)
+	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		setupScene()
-		
-		startSequence()
+		let scene = BreatheScene(size: view.bounds.size)
+		let skView = self.view as! SKView
+		skView.showsFPS = true
+		skView.showsNodeCount = true
+		skView.ignoresSiblingOrder = true
+		scene.scaleMode = .ResizeFill
+		skView.presentScene(scene)
 	}
-	
-	func setupScene() {
-		view.backgroundColor = UIColor.peterRiverColor()
-		
-		view.addSubview(box)
-		box.snp_makeConstraints { (make) in
-			make.width.equalTo(view.snp_width).dividedBy(10)
-			make.height.equalTo(view.snp_width).dividedBy(10)
-			
-		}
-		
-	}
-	
-	func startSequence() {
-		
-		//4 seconds in
-		
-		
-		//7 seconds hold
-		
-		
-		//8 seconds out
-	}
-	
 	
 }
